@@ -1,0 +1,33 @@
+Please carefully analyze the input image and provide detailed answers to the following questions. 
+Ensure your answers explicitly reflect the presence of a person falling or a leak, and include any relevant context.
+
+### Fall Detection ###
+1. Does the image depict a person who appears to be in a collapsed or falling state? 
+(Answer explicitly as 'Yes, a person is falling' or 'No, no one is falling').
+2. If yes, specify the approximate location of the person (e.g., 'near the center of the room', 'close to the machinery', etc.).
+
+### Decision ###
+3. Based on the answers above:
+   - If there is a falling person -> 'Fall': 1, otherwise 'Fall': 0
+
+### Additional Information ###
+4. How many people are present in the image? (Provide an exact number).
+5. Provide a detailed description of the image summarizing your answers above, including:
+   - Falling state of the person
+   - Number of people and their actions
+
+Example response format:
+{
+    "Number_of_people": 1, 
+    "Fall": 1, 
+    "description": "Yes, a person is falling near the center of the room. One person is lying on the floor, appearing to be in distress."
+    }
+    {
+    "Number_of_people": 2, 
+    "Fall": 0, 
+    "description": "Two people are present. One person is working near the machine."
+}
+
+Please include only the example response format in your response. Do not include any other explanation, especially ```json```.
+Make sure your opening and closing parentheses are { and }.
+**Ensure that all keys and values in the response use standard double quotes (`\`)**, not curly quotes (`“` and `”`). 
